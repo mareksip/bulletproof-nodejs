@@ -3,6 +3,12 @@ import mongoose from 'mongoose';
 
 const User = new mongoose.Schema(
   {
+    id: {
+      type: String,
+      required: [true, 'Please enter ID'],
+      index: true,
+    },
+
     name: {
       type: String,
       required: [true, 'Please enter a full name'],

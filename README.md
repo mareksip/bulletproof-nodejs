@@ -1,3 +1,25 @@
+# Initialization steps
+1) Have mongodb, node, npm installed
+2) run app with `npm run start`
+3) Initialize sample data with /mockdata/init POST call
+4) To call endpoints for users, policy user and user's policies please see examples in postman: https://www.getpostman.com/collections/ec9d26b652c919d1db17 
+
+# isolutions interview app
+
+Solution steps:
+1) Project is based on bulletproof open source example described below.
+2) MongoDB database set up
+3) /mockdata/init endpoint added to create user collection based on mock data. Each user has default password 'test' for authentication
+4) Interface IFilterInputDTO added to parse POST body for user lookup by id and name.
+5) Model for MockPolicy was added
+6) /mockdata/users POST endpoint added to lookup user by id and name. 
+7) /mockdata/userpolicies GET endpoint added to find user's policies
+8) /mockdata/policyuser GET endpoint added to find user belonging to policy
+9) /userpolicies and /policyuser requires admin to be logged in.
+
+To login use endpoint `auth/signin` and password `test`.
+
+
 # Bulletproof Node.js architecture 🛡️
 
 This is the example repository from the blog post ['Bulletproof node.js project architecture'](https://softwareontheroad.com/ideal-nodejs-project-structure?utm_source=github&utm_medium=readme)

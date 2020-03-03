@@ -4,7 +4,7 @@
 3) Initialize sample data with /mockdata/init POST call
 4) To call endpoints for users, policy user and user's policies please see examples in postman: https://www.getpostman.com/collections/ec9d26b652c919d1db17 
 
-# isolutions interview app
+# amaris interview app
 
 Solution steps:
 1) Project is based on bulletproof open source example described below.
